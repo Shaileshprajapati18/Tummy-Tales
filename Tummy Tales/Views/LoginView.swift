@@ -17,6 +17,11 @@ struct LoginView: View {
     @State private var isPasswordVisible = false
     @State private var isConfirmPasswordVisible = false
     
+    @AppStorage("isLoggedIn") private var isLoggedIn = false
+    @AppStorage("userEmail") private var storedEmail = ""
+    
+    @State private var navigateToWelcome = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -42,6 +47,8 @@ struct LoginView: View {
                         TextField("example@gmail.com", text: $email)
                             .autocapitalization(.none)
                             .keyboardType(.emailAddress)
+                            .disableAutocorrection(true)
+                            .textInputAutocapitalization(.never)
                             .padding()
                             .background(RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.gray.opacity(0.4)))
@@ -55,8 +62,10 @@ struct LoginView: View {
                         HStack {
                             if isPasswordVisible {
                                 TextField("must be 8 characters", text: $password)
+                                    
                             } else {
                                 SecureField("must be 8 characters", text: $password)
+                                    
                             }
                             Button(action: {
                                 isPasswordVisible.toggle()
@@ -78,8 +87,9 @@ struct LoginView: View {
                         HStack {
                             if isConfirmPasswordVisible {
                                 TextField("repeat password", text: $confirmPassword)
-                            } else {
+                                                                } else {
                                 SecureField("repeat password", text: $confirmPassword)
+                                   
                             }
                             Button(action: {
                                 isConfirmPasswordVisible.toggle()
@@ -106,24 +116,26 @@ struct LoginView: View {
                     Button(action: {
                         if isValidForm() {
                             showError = false
-                            // Navigate to next screen if needed
+                            storedEmail = email
+                            isLoggedIn = true
+                            navigateToWelcome = true
                         } else {
                             showError = true
                         }
                     }) {
-                        NavigationLink {
-                            WelcomeView()
-                        } label: {
-                            BButton(button: "Login")
-                                .frame(maxWidth: .infinity, minHeight: 50)
-                                .padding(.horizontal)
-                                .padding(.top, 20)
-
-                        }
-                        
-
+                        Text("Login")
+                            .frame(maxWidth: .infinity, minHeight: 50)
+                            .foregroundColor(.white)
+                            .background(Color.black)
+                            .cornerRadius(10)
+                            .padding(.horizontal)
+                            .padding(.top, 20)
                     }
 
+                    // NavigationLink for conditional navigation
+                    NavigationLink("", destination: WelcomeView(), isActive: $navigateToWelcome)
+                        .hidden()
+                    
                     // OR line
                     HStack {
                         Rectangle()
@@ -168,12 +180,11 @@ struct LoginView: View {
                             .foregroundColor(.black)
                         Spacer()
                     }
-                 
                     .padding(.bottom, 20)
                 }
                 .padding(.top, 20)
             }
-            .scrollDismissesKeyboard(.interactively) // iOS 16+
+            .scrollDismissesKeyboard(.interactively)
             .navigationBarBackButtonHidden(true)
             .hideKeyboardOnTap()
         }
@@ -181,7 +192,8 @@ struct LoginView: View {
     
     // MARK: - Validation
     func isValidForm() -> Bool {
-        if email.isEmpty || !email.contains("@") || !email.contains(".") {
+        if email.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ||
+            !email.contains("@") || !email.contains(".") {
             errorMessage = "Please enter a valid email."
             return false
         }
@@ -209,6 +221,7 @@ extension View {
     }
 }
 
+// MARK: - Preview
 #Preview {
     LoginView()
 }

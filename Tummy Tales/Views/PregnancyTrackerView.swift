@@ -60,7 +60,7 @@ struct PregnancyTrackerView: View {
                     .padding(.horizontal)
                 
                 // Baby Image
-                Image(babyImageName)
+                Image("apple")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 120, height: 120)
@@ -166,12 +166,12 @@ struct MainTabView: View {
                     Label("Track", systemImage: "map")
                 }
 
-            Text("Ask Amma Screen")
+            AskAmmaView()
                 .tabItem {
                     Label("Ask Amma", systemImage: "message")
                 }
 
-            Text("Mom Network Screen")
+            MomNetworkView()
                 .tabItem {
                     Label("Mom Network", systemImage: "person.3")
                 }
