@@ -7,7 +7,6 @@
     android:orientation="vertical"
     android:background="#FFFFFF">
 
-    <!-- Welcome Title (Pinned to Top) -->
     <TextView
         android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
