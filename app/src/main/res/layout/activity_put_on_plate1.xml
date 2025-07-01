@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="24dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/mealmap" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:backgroundTint="#F1F1F1"
+                android:background="@drawable/border_overlay">
+
+                <TextView
+                    android:id="@+id/plan_your_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Put on Plate"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:fontFamily="@font/verdana_bold_italic"
+                    android:background="@drawable/border_overlay"
+                    android:textAlignment="center"
+                    android:backgroundTint="@color/white"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bite_breakdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Bite Breakdown"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/verdana_bold_italic"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Cuisine Preference"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@drawable/border_overlay"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Dietary Preferences"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@drawable/border_overlay"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingTop="24dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/blue"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/verdana_bold_italic"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#F1F1F1"
+                    android:background="@drawable/border_overlay"
+                    android:text="9:41 AM" />
+
+                <ImageView
+                    android:id="@+id/breakfast"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/blue"
+                    android:layout_toEndOf="@id/time"
+                    android:src="@drawable/breakfast"
+                    android:background="@drawable/border_overlay"
+                    android:layout_marginStart="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingTop="24dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="10dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/blue"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/verdana_bold_italic"
+                    android:backgroundTint="#F1F1F1"
+                    android:background="@drawable/border_overlay"
+                    android:text="9:41 AM" />
+
+                <ImageView
+                    android:id="@+id/lunch"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/blue"
+                    android:layout_toEndOf="@id/time"
+                    android:src="@drawable/lunch"
+                    android:background="@drawable/border_overlay"
+                    android:layout_marginStart="10dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingTop="24dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/blue"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/verdana_bold_italic"
+                    android:backgroundTint="#F1F1F1"
+                    android:background="@drawable/border_overlay"
+                    android:text="9:41 AM" />
+
+                <ImageView
+                    android:id="@+id/txtDate"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/blue"
+                    android:layout_toEndOf="@id/time"
+                    android:src="@drawable/snack"
+                    android:background="@drawable/border_overlay"
+                    android:layout_marginStart="10dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingTop="24dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/blue"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/verdana_bold_italic"
+                    android:backgroundTint="#F1F1F1"
+                    android:background="@drawable/border_overlay"
+                    android:text="9:41 AM" />
+
+                <ImageView
+                    android:id="@+id/txtDate"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/blue"
+                    android:layout_toEndOf="@id/time"
+                    android:src="@drawable/drink"
+                    android:background="@drawable/border_overlay"
+                    android:layout_marginStart="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingTop="24dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/blue"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/verdana_bold_italic"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#F1F1F1"
+                    android:background="@drawable/border_overlay"
+                    android:text="9:41 AM" />
+
+                <ImageView
+                    android:id="@+id/txtDate"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/blue"
+                    android:layout_toEndOf="@id/time"
+                    android:src="@drawable/dinner"
+                    android:background="@drawable/border_overlay"
+                    android:layout_marginStart="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start">
+
+                <ImageButton
+                    android:id="@+id/foreword_arrow"
+                    android:layout_width="39dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/edittext_overlay"
+                    android:src="@drawable/baseline_arrow_back_ios_new_24"
+                    app:tint="#000000"
+                    android:contentDescription="Next"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

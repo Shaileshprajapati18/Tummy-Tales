@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:paddingTop="24dp"
+        android:paddingStart="24dp"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        app:cardCornerRadius="16dp"
+        android:padding="24dp"
+        android:elevation="6dp"
+        android:layout_margin="30dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="16dp">
+
+        <LinearLayout
+            android:id="@+id/cardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:elevation="6dp"
+            android:layout_gravity="center"
+            android:clipToOutline="true"
+            android:backgroundTintMode="src_in"
+            android:background="@drawable/rounded_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s get you set up. Start by filling in some basic information about your pregnancy, healthcare preferences, and more. The more you share, the more personalized your experience will be. Don’t worry — you can always update your answers anytime in your profile settings."
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/foreword_arrow"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/edittext_overlay"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            app:tint="#000000"
+            android:contentDescription="Next"/>
+    </LinearLayout>
+
+</LinearLayout>

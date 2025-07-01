@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="24dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/mealmap" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:backgroundTint="#F1F1F1"
+                android:background="@drawable/border_overlay">
+
+                <TextView
+                    android:id="@+id/plan_your_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Put on Plate"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@drawable/border_overlay"
+                    android:textAlignment="center"
+                    android:backgroundTint="@color/white"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/truth_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Bite Breakdown"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:padding="3dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/aloopoha"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+               >
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:src="@drawable/ingredient"
+                    android:background="@drawable/border_overlay"
+                    android:layout_margin="5dp" />
+
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:padding="7dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/natural_values"
+                    android:background="@drawable/border_overlay"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="Two Potatoes"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="16 g Protein"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="1 Cup Thick Poha"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="37 g Carbohydrates"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="2 Green Chillies"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="7 g Fat"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="1 Tsp Mustard Seeds"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="3 g Fiber"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="1 Tsp Cumin"
+                    android:layout_marginEnd="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="2 g Iron"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="6 Curry Leaves"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="2 Tbsp Urad Dal"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="3 Tbsp Salt"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp"
+                android:src="@drawable/recipe"
+                android:background="@drawable/border_overlay"
+                android:layout_margin="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:textSize="17sp"
+                android:drawablePadding="10dp"
+                android:textStyle="bold"
+                android:text="1. Prepare the Poha:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:textSize="17sp"
+                android:drawableStart="@drawable/dot"
+                android:drawableTint="@color/black"
+                android:drawablePadding="10dp"
+                android:text="Rinse the poha in a colander under cold water for about 15-20 seconds." />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:textSize="17sp"
+                android:drawableStart="@drawable/dot"
+                android:drawableTint="@color/black"
+                android:text="Gently mix with your hands to remove any excess starch."
+                android:drawablePadding="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="17sp"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:text="Sprinkle a pinch of salt and the turmeric powder over the soaked poha, gently mix, and set aside."
+                    android:drawablePadding="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="17sp"
+                    android:drawablePadding="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="2. Cook the Potatoes:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="17sp"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:text="Heat oil in a large pan over medium heat."
+                    android:drawablePadding="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="17sp"
+                    android:drawableStart="@drawable/dot"
+                    android:drawableTint="@color/black"
+                    android:text="Add the diced potatoes and sauté until they are golden and cooked through. Remove and set aside."
+                    android:drawablePadding="10dp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="start">
+
+                <ImageButton
+                    android:id="@+id/foreword_arrow"
+                    android:layout_width="39dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/edittext_overlay"
+                    android:src="@drawable/baseline_arrow_back_ios_new_24"
+                    app:tint="#000000"
+                    android:contentDescription="Next"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustResize"
+    android:background="#FFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="24dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="-20dp"
+            android:src="@drawable/himom"/>
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/settings"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#D9D9D9">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/camera1"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="week of pregnancy?"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:background="@drawable/border_overlay"
+                android:layout_margin="10dp"
+                android:text="Priya B\n@username\nJoined on --/--/--"
+                android:textColor="@color/dark_gray"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:background="@drawable/border_overlay"
+                android:layout_margin="10dp"
+                android:text="\nSupporter (if added)\n"
+                android:textColor="@color/dark_gray"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:fontFamily="@font/verdana_bold_italic"
+                android:maxEms="15"
+                android:layout_margin="10dp"
+                android:drawableTop="@drawable/circle_dot"
+                android:textColor="@color/black"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/verdana_bold_italic"
+                android:layout_marginTop="2dp"
+                android:drawableTop="@drawable/circle_dot"
+                android:textColor="@color/black"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="30dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:background="@drawable/border_overlay"
+                    android:layout_margin="10dp"
+                    android:text="\nStreak\n"
+                    android:textColor="@color/dark_gray"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:background="@drawable/border_overlay"
+                    android:layout_margin="10dp"
+                    android:text="\nBadges\n"
+                    android:textColor="@color/dark_gray"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="24dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What to Expect"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="4dp"/>
+
+            <ImageView
+                android:id="@+id/notes"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/date"/>
+
+            <ImageView
+                android:id="@+id/date"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_toStartOf="@id/notes"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/notes"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Week 15: May 6 - May 12"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/edittext_overlay"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/factsAndFlash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Tips of the Week" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/top_arrow"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:text="Schedule a dental check-up:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="If your gums are bleeding, or if your teeth feel loose due to hormone fluctuations, it’s a good idea to see your dentist. " />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:text="Rest when you can:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp"
+            android:text="Sure, you’re bursting with energy now, but don’t overdo it. Kicking your feet up or taking a nap helps with things like headaches, which can be common at 15 weeks pregnant, back aches and overworked joints and muscles."
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:text="Look into childbirth classes:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp"
+            android:text="You have a lot to do to get ready for baby’s birth day, and the second trimester will fly by as you try to get all your to-do’s done. Take the time now to explore options for childbirth classes and sign up for one that’s the best fit for your labor and delivery goals."
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Click to see a list of childbirth classes offered near you:"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Childbirth classes"
+            android:background="@drawable/button_overlay"
+            android:padding="10dp"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

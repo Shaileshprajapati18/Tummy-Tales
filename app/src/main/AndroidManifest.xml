@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Demo"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MadicationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MomNetworkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AskAmmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.YourCalenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.JournalFullBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.JournalBeginningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PutOnPlate.PutOnPlate1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KickCount.KickCount2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KickCount.KickCount1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PutOnPlate.BiteBreakdown1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PutOnPlate.PutOnPlate3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HomeLandingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WhatToExpect.TruthCheckActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WhatToExpect.PlanYourEvents"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WhatToExpect.MealsAndDietActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WhatToExpect.SetUpForTheBabyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WhatToExpect.EssentialTestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WhatToExpect.WeekLandingPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WhatToExpect.TipsofTheWeekActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WhatToExpect.FactsAndFlash.YouBadyAndBodyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DailyTales.ChecklistViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DailyTales.TrakerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ResourcesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.AddSupporters.StartSupporterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddSupporters.AddSupportersPinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddSupporters.AddPrimarySupporterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ExperienceExpectationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LifestyePreferencesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HealthHealthcareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PregnancyStatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SIgnUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.GeneralDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HiMom"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddSupporters.AddSupporterActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

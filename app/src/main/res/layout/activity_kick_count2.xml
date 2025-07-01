@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="24dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:src="@drawable/kickcount" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/startcountingbackground">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:src="@drawable/record_this_kick"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/camera"/>
+
+            </RelativeLayout>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:max="100"
+                android:progress="30"
+                android:progressDrawable="@drawable/seekbar_track"
+                android:thumb="@drawable/custom_thumb"
+                android:thumbTint="@null"
+                android:splitTrack="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/circle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="17sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="Very Strong Kick"
+                        android:drawablePadding="10dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/circle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="17sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="Strong Kick"
+                        android:drawablePadding="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/circle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="17sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="Gentle Bump"
+                        android:drawablePadding="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/circle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="17sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="Light Flutter"
+                        android:drawablePadding="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/circle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="17sp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="Barely Felt"
+                        android:drawablePadding="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start">
+
+                <ImageButton
+                    android:id="@+id/foreword_arrow"
+                    android:layout_width="39dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/edittext_overlay"
+                    android:src="@drawable/baseline_arrow_back_ios_new_24"
+                    app:tint="#000000"
+                    android:contentDescription="Next"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/view_history"
+                    android:text="View History"
+                    android:textColor="@color/white"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/gray"
+                    />
+
+                <Button
+                    android:id="@+id/view_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="How it Works"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:backgroundTint="@color/gray"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

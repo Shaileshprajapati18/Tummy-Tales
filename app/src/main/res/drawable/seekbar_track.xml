@@ -1,0 +1,24 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background (gray) -->
+    <item android:id="@android:id/background"
+        android:top="9dp" android:bottom="9dp"> <!-- vertical centering -->
+        <shape>
+            <size android:height="5dp"/>
+            <corners android:radius="10dp"/>
+            <solid android:color="#E0E0E0"/>
+        </shape>
+    </item>
+
+    <!-- Progress (blue) -->
+    <item android:id="@android:id/progress"
+        android:top="9dp" android:bottom="9dp"> <!-- same padding -->
+        <clip>
+            <shape>
+                <size android:height="5dp"/>
+                <corners android:radius="10dp"/>
+                <solid android:color="#2196F3"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

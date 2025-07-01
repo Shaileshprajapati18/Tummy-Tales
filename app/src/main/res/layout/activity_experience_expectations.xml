@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Welcome Title (Pinned to Top) -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experience &amp; Expectations"
+        android:paddingTop="24dp"
+        android:paddingStart="24dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <!-- Centered Card Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="20dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="What do you expect most from this platform?"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_overlay">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@null"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textColorHint="#888888"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_arrow_drop_down_circle_24"
+                app:tint="#000000"
+                android:layout_marginEnd="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="Next"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are there any specific challenges or concerns you would like support with?"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@drawable/edittext_overlay"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Would you like to receive personalized resources, tips, or reminders based on your profile?"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@drawable/edittext_overlay"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Any additional feedback or comments for us?"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_overlay">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@null"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textColorHint="#888888"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_arrow_drop_down_circle_24"
+                app:tint="#000000"
+                android:layout_marginEnd="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="Next"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/foreword_arrow"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/edittext_overlay"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            app:tint="#000000"
+            android:contentDescription="Next"/>
+    </LinearLayout>
+
+</LinearLayout>

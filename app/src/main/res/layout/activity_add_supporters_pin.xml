@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Supporters"
+        android:paddingTop="24dp"
+        android:paddingStart="24dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate a Referral Pin for your supporter"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:padding="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Once generated, share the referral pin with your supporter. After they sign up, they’ll have access to the information you've allowed. Don’t worry—you can change their access at any time, and they won’t be notified if you update it. We’ve got you covered!"
+        android:textSize="17sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_overlay"
+        android:padding="6dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:text="**************"
+        android:layout_marginTop="8dp"
+        android:layout_margin="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textSize="16sp"
+        android:paddingEnd="50dp"
+        android:layout_gravity="center"
+        android:paddingStart="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/transparent"
+        app:cornerRadius="0dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#747474" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Add more Supporters"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:drawableTint="@color/black"
+        android:background="@drawable/edittext_overlay"
+        android:backgroundTint="#F1F1F1"
+        android:layout_marginStart="25dp"
+        android:drawablePadding="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/foreword_arrow"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/edittext_overlay"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            app:tint="#000000"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="Next"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

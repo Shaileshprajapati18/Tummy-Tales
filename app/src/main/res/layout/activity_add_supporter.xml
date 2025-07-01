@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Welcome Title (Pinned to Top) -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Supporter"
+        android:paddingTop="24dp"
+        android:paddingStart="24dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose who can join you on your journey. You control what they can track, and you can update access whenever you need."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you have someone supporting you through your pregnancy?"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="16sp"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#18E61C"
+            app:cornerRadius="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#747474" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="16dp"
+            android:layout_marginEnd="10dp"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@android:color/transparent"
+            app:cornerRadius="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#747474" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="description1">Start your day’s streak now!\n\nYour baby’s lungs are starting to develop this week!! Learn more >>>></string>
+    <string name="description2">True or False: At 15 weeks, your baby might be hiccuping and practicing breathing, but you won’t feel a thing.</string>
+    <string name="description3">True! These early hiccups and breathing motions are too tiny for you to notice!</string>
+    <string name="default_web_client_id">717459158989-4d07131v9i4c7i2sbbpsrvcif0set4g6.apps.googleusercontent.com</string>
+</resources>
